@@ -14,7 +14,7 @@ When the API hides confidence and returns only labels, the attacker falls back t
 
 ## What Is Implemented
 
-Four victims train on synthetic data with fixed seeds.
+Four victims train on synthetic data with fixed seeds. The datasets are generated in memory at startup, so every run reproduces the numbers below.
 
 | ID | Model | Data |
 |---|---|---|
@@ -36,7 +36,14 @@ Four attacks run against them. Equation solving for the binary model, soft label
 
 ## Setup
 
-Install Python 3.9 or newer and Node.js.
+Install Python 3.9 or newer and Node.js 18 or newer.
+
+Clone the repository.
+
+```bash
+git clone https://github.com/YashDahiwlikar914/Stealing-ML-Models-Via-Prediction-APIs.git
+cd Stealing-ML-Models-Via-Prediction-APIs
+```
 
 Start the backend.
 
@@ -106,4 +113,4 @@ Rounding and noise reduce the fidelity of equation solving in this implementatio
 
 ## Reference
 
-F. Tramèr, F. Zhang, A. Juels, M. Reiter, and T. Ristenpart, Stealing Machine Learning Models via Prediction APIs, Proc. 25th USENIX Security Symposium, Austin, 2016, pages 601 to 618.
+F. Tramèr, F. Zhang, A. Juels, M. Reiter, and T. Ristenpart, Stealing Machine Learning Models via Prediction APIs, Proc. 25th USENIX Security Symposium, Austin, 2016, pages 601 to 618. The paper is available at https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer.
